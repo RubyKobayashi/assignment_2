@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-const char = () => {
+const char = (props) => {
 
   const style = {
     display: 'inline-block',
@@ -13,7 +13,9 @@ const char = () => {
   };
 
   return(
-    <div style={style}></div>
+    <div style={style}>
+      {props.character}
+    </div>
   );
 };
 

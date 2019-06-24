@@ -15,13 +15,19 @@ class App extends Component {
 
 
   render() {
+    const charList = this.state.input.split('').map(char => {
+      return <Char character={char} />;
+    });
+
+
     return (
       <div className="App">
         <input type='text'
-          onChange={(event) => this.changeListenerHandler(event)}
+          onChange={(event) => this.changeListenerHandler(event)};
           value={this.state.input}/>
         <p>{this.state.input}</p>
         <Validation length={this.state.input.length}/>
+        {charList}
       </div>
     );
   };
