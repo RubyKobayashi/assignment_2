@@ -16,11 +16,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <input type='text'
-      onChange={(event) => this.changeListenerHandler(event)}
-      value={this.state.input}/>
-      <p>{this.state.input}</p>
-      <Validation length={this.state.input.length}/>
+        <input type='text'
+          onChange={(event) => this.changeListenerHandler(event)}
+          value={this.state.input}/>
+        <p>{this.state.input}</p>
+        <Validation length={this.state.input.length}/>
       </div>
     );
   };
